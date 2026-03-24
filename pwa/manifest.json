@@ -1,0 +1,50 @@
+{
+  "name": "GestãoEducacional",
+  "short_name": "GestãoEducacional",
+  "icons": [
+    {
+      "src": "../pwa/imagens/128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "../pwa/imagens/144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "../pwa/imagens/152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "../pwa/imagens/192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../pwa/imagens/256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "../pwa/imagens/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/login/login.php",
+  "display": "standalone",
+  "scope": "/",
+  "background_color": "#0a1f44",
+  "theme_color": "#3a6ea5",
+  "description": ".",
+  "id": "GestãoEducacional",
+  "categories": [
+    "Gestão",
+    "Educacional",
+    "Adiministação"
+  ],
+  "orientation": "portrait"
+}
