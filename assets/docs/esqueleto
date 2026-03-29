@@ -1,16 +1,24 @@
-├── index.php                 
-├── composer.json
-├── .env
-├── .gitignore
-├── src/                      <-- TUDO DO FRAMEWORK FICA AQUI
-│   ├── Saudacoes.php         <-- Classe de exemplo
-│   ├── Database.php          <-- Classe de conexão (que vamos criar)
-│   └── Auth.php              <-- Classe de login (que vamos criar)
-├── includes/                 <-- Snippets de HTML (header, footer)
-├── assets/                   
-│   ├── css/
-│   ├── js/
-│   ├── uploads/
-│   └── docs/                 <-- Mova o privacidade.html e termo.html para cá
-├── pwa/                      
-└── conn/                     <-- No futuro, o Framework elimina essa pasta!
+devpulse/
+├── 📄 .gitignore                <-- Criado na raiz para gerenciar o monorepo.
+├── 📖 README.md                 <-- Documentação principal do projeto.
+│
+├── 🐘 api-devpulse/             (BACKEND - Laravel)
+│   ├── 📄 .env                  <-- Configuração do Banco de Dados MySQL.
+│   ├── 📂 app/Models/
+│   │   └── 📄 Project.php       <-- Onde definimos a tabela de projetos.
+│   ├── 📂 app/Http/Controllers/
+│   │   └── 📄 ProjectController.php <-- Lógica para buscar os dados no banco.
+│   ├── 📂 database/
+│   │   ├── 📂 migrations/
+│   │   │   └── 📄 create_projects_table.php <-- Estrutura da tabela no MySQL.
+│   │   └── 📂 seeders/
+│   │       └── 📄 ProjectSeeder.php <-- Onde você "plantou" seus projetos reais.
+│   └── 📂 routes/
+│       └── 📄 api.php           <-- Onde criamos a rota /api/projects.
+│
+└── 🌐 web-devpulse/             (FRONTEND - React)
+    ├── 📂 src/
+    │   ├── 📄 App.jsx           <-- O coração do site (Axios + Cards Bootstrap).
+    │   ├── 📄 main.jsx          <-- Onde o React é inicializado.
+    │   └── 📄 index.css         <-- Onde colocamos o efeito de "Hover" nos cards.
+    └── 📄 package.json          <-- Onde instalamos o Axios e o Lucide-React.
